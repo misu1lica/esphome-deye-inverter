@@ -5,8 +5,8 @@ substitutions:
   modbus_controller_id: deye_modbus_controller
   baud_rate: "9600"
   # Safe Mode Default parameters
-  default_maximum_battery_charge_current: "130" # Amps
-  default_max_sell_power: "6000" # Watts
+  default_maximum_battery_charge_current: "230" # Amps
+  default_max_sell_power: "6500" # Watts
   default_system_work_mode: "Zero Export To Load" # "Selling First", "Zero Export To Load", "Zero Export To CT"
   default_solar_sell: "on" # "on", "off"
 
@@ -39,3 +39,4 @@ script:
           option: ${default_system_work_mode}
       - switch.turn_${default_solar_sell}:
           id: switch_solar_sell
+
